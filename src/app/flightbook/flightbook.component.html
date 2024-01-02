@@ -1,0 +1,55 @@
+
+<div class="content">
+
+  <div class="content-left">
+      <app-user-page></app-user-page>
+  </div>
+
+<div class="form-container">
+
+  <form (ngSubmit)="bookFlight()" #bookingForm="ngForm">
+    <h2>Flight Booking Form</h2>
+    <div class="flightbook">
+      <label for="departure">Departure</label>
+      <input type="text" class="form-control" id="departure" name="departure" ngModel required>
+    </div>
+
+    <div class="flightbook">
+      <label for="destination">Destination</label>
+      <input type="text" class="form-control" id="destination" name="destination" ngModel required>
+    </div>
+
+    <div class="flightbook">
+      <label for="date">Date</label>
+      <input type="date" class="form-control" id="date" name="date" ngModel required>
+    </div>
+
+    <div class="flightbookval">
+      <div class="adult">
+        <label for="Adults">Adults(18+)</label>
+        <input type="text" class="form-control" id="Adults" name="Adults" ngModel required>
+      </div>
+      <div class="children">
+        <label for="Children">Children(0-17)</label>
+        <input type="text" class="form-control" id="Children" name="Children" ngModel required>
+      </div>
+    </div>
+
+    <div class="flightbook">
+      <label for="seatPreference">Seat Preference</label>
+      <select class="form-select" id="seatPreference" name="seatPreference" ngModel>
+        <option value="window">Window</option>
+        <option value="aisle">Aisle</option>
+        <option value="middle">Middle</option>
+      </select>
+    </div>
+
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</div>
+
+

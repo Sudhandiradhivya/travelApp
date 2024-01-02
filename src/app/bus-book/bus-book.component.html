@@ -1,0 +1,63 @@
+
+<div class="content">
+  <div class="content-left">
+      <app-user-page></app-user-page>
+  </div>
+
+<div class="form-container">
+  <form (ngSubmit)="bookBus()" #bookingForm="ngForm">
+    <h2>Bus Booking Form</h2>
+    <div class="busbook">
+      <label for="Passenger Name">Passenger Name</label>
+      <input type="text" class="form-control" id="Passenger Name" name="Passenger Name" ngModel required>
+    </div>
+    <div class="busbookval">
+    <div class="busbook">
+      <label for="Contact Number">Contact Number</label>
+      <input type="number" class="form-control" id="Contact Number" name="Contact Number" ngModel required>
+    </div>
+    <div class="busbook">
+      <label for="departure">Email Address</label>
+      <input type="email" class="form-control" id="departure" name="departure" ngModel required>
+    </div>
+  </div>
+    <div class="busbook">
+      <label for="date">Date Of Pick-Up</label>
+      <input type="date" class="form-control" id="date" name="date" ngModel required>
+    </div>
+    <div class="busbookval">
+    <div class="busbook">
+      <label for="departure">Departure</label>
+      <input type="text" class="form-control" id="departure" name="departure" ngModel required>
+    </div>
+
+    <div class="busbook">
+      <label for="destination">Destination</label>
+      <input type="text" class="form-control" id="destination" name="destination" ngModel required>
+    </div>
+  </div>
+    <div class="busbookval">
+      <div class="city">
+        <label for="City">City</label>
+        <input type="text" class="form-control" id="City" name="City" ngModel required>
+      </div>
+      <div class="region">
+        <label for="Region">Region</label>
+        <input type="text" class="form-control" id="Region" name="Region" ngModel required>
+      </div>
+    </div>
+
+    <div class="busbook">
+      <label for="Number Of Seats">Number Of Seats</label>
+      <input type="number" class="form-control" id="Number Of Seats" name="Number Of Seats" ngModel required>
+    </div>
+
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</div>
+
+

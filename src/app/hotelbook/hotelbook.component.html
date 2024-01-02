@@ -1,0 +1,58 @@
+
+<div class="content">
+  <div class="content-left">
+      <app-user-page></app-user-page>
+  </div>
+
+<div class="form-container">
+  <form (ngSubmit)="reservationHotel()" #bookingForm="ngForm">
+    <h2>Hotel Reservation Form</h2>
+    <div class="hotelbook">
+      <label for="roomType">Room/Suite Type</label>
+          <select id="roomType" name="roomType" ngModel>
+            <option value="standard">Standard Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="suite">Suite</option>
+
+          </select>
+    </div>
+    <div class="hotelbookval">
+
+    <div class="hotelbook">
+      <label for="checkInDate">Check-In Date</label>
+      <input type="date" id="checkInDate" name="checkInDate" required>
+    </div>
+    <div class="hotelbook">
+      <label for="checkOutDate">Check-Out Date</label>
+      <input type="date" id="checkOutDate" name="checkOutDate" required>
+    </div>
+  </div>
+    <div class="hotelbook">
+      <label for="Number Of Rooms">Number Of Rooms</label>
+      <input type="number" id="Number Of Rooms" name="Number Of Rooms" required>
+    </div>
+    <div class="hotelbookval">
+    <div class="hotelbook">
+      <label for="adults">Number of Adults</label>
+      <input type="number" id="adults" name="adults" required>
+    </div>
+    <div class="hotelbook">
+      <label for="children">Number of Children</label>
+      <input type="number" id="children" name="children" required>
+    </div>
+  </div>
+  <div class="hotelbook">
+    <label for="restaurantFacility">Restaurant Facility</label>
+    <select id="restaurantFacility" name="restaurantFacility" ngModel >
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+  </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</div>
+
+

@@ -1,0 +1,33 @@
+
+.booking-menus
+{
+
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.booking-menus .booking-types{
+padding: 20px;
+margin-left: 50px;
+width: 45%;
+
+}
+.booking-menus .booking-types p{
+  padding: 10px;
+  align-items: center;
+  margin-left: 10px;
+  background-color: rgb(6, 6, 52);
+  border-radius: 20px;
+  }
+.booking-menus .booking-types a{
+  padding: 20px;
+  align-items: center;
+  margin-left: 50px;
+  color: #fff;
+  text-decoration: none;
+  }
+.booking-menus .sidebar-right{
+  padding: 20px;
+  background-color: blue;
+}
