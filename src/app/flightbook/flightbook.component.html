@@ -7,37 +7,37 @@
 
 <div class="form-container">
 
-  <form (ngSubmit)="bookFlight()" #bookingForm="ngForm">
+  <form [formGroup]="flightBookingForm" (ngSubmit)="submitForm()">
     <h2>Flight Booking Form</h2>
     <div class="flightbook">
       <label for="departure">Departure</label>
-      <input type="text" class="form-control" id="departure" name="departure" ngModel required>
+      <input type="text"  id="departure" name="departure" formControlName="Departure">
     </div>
 
     <div class="flightbook">
       <label for="destination">Destination</label>
-      <input type="text" class="form-control" id="destination" name="destination" ngModel required>
+      <input type="text" class="form-control" id="destination" formControlName="Destination">
     </div>
 
     <div class="flightbook">
       <label for="date">Date</label>
-      <input type="date" class="form-control" id="date" name="date" ngModel required>
+      <input type="date" class="form-control" id="date" formControlName="Date">
     </div>
 
     <div class="flightbookval">
       <div class="adult">
         <label for="Adults">Adults(18+)</label>
-        <input type="text" class="form-control" id="Adults" name="Adults" ngModel required>
+        <input type="text" class="form-control" id="Adults" formControlName="Adults">
       </div>
       <div class="children">
         <label for="Children">Children(0-17)</label>
-        <input type="text" class="form-control" id="Children" name="Children" ngModel required>
+        <input type="text" class="form-control" id="Children" formControlName="Children">
       </div>
     </div>
 
     <div class="flightbook">
       <label for="seatPreference">Seat Preference</label>
-      <select class="form-select" id="seatPreference" name="seatPreference" ngModel>
+      <select class="form-select" id="seatPreference" formControlName="SeatPreference">
         <option value="window">Window</option>
         <option value="aisle">Aisle</option>
         <option value="middle">Middle</option>
